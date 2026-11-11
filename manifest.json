@@ -1,0 +1,16 @@
+﻿
+{
+  "manifest_version": 3,
+  "name": "N1cePrivacy",
+  "version": "1.0.0",
+  "description": "Controls browser page visibility signals.",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["inject.js"],
+      "run_at": "document_start",
+      "world": "MAIN",
+      "all_frames": true
+    }
+  ]
+}
